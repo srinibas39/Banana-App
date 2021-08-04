@@ -9,15 +9,23 @@ button.addEventListener("click",function(e){
    // console.log("button clicked");
    inputFromTextArea(e);
 })
-// inputText.addEventListener("click",function(e){
-//      input(e);
-// })
-// inputText.addEventListener("change",function(e){
-//     inputFromTextArea(e);
-// })
+function serverURL(text){
+   var URL="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"+"?"+"text="+text;
+   return encodeURI(URL);
+}
 
 function inputFromTextArea(e){
 //  console.log("clicked");
 //  console.log(inputText.value);
 translatedArea.innerText="🍌banana banana🍌 banana🍌 banana🍌 "+inputText.value+" banana🍌 banana🍌 banana🍌 banana🍌 "
+ //lets fetch URL
+ fetch(serverURL(inputText.value))
+ .then(response => response.json())
+ .then(json => console.log(json))
+ .catch(function(error){
+    console.log(error);
+    alert("Some error happened in the server please try after some time");
+ })
+
 }
+
