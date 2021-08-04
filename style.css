@@ -1,6 +1,35 @@
-.Button{
 
-}
-#textarea{
+.btn-translate{
+
+    position: absolute;
+    
+    top: 50vh;
+    
+    left: 21vw;
+    }
+    
+    #input-text{
+        
+    display: block;
+        
+    height: 14rem;
+        
+    width: 60%;
+        
+    margin: auto;
+    }
+    .translated-area{
+
+height: 30%;
+
+width: 80%;
+
+border: 1px solid;
+
+position: absolute;
+
+top: 60vh;
+
+left: 10vw;
 
 }

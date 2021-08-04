@@ -1,8 +1,10 @@
 // var userName=window.prompt("Enter your name","Ex:Rahul Sharma");//prompt allows us to take input
 // alert(userName);
 
-var button=document.querySelector("button");
-var inputText=document.querySelector("#textarea");
+var button=document.querySelector(".btn-translate");
+var inputText=document.querySelector("#input-text");
+var translatedArea=document.querySelector(".translated-area");
+
 button.addEventListener("click",function(e){
    // console.log("button clicked");
    inputFromTextArea(e);
@@ -15,6 +17,7 @@ button.addEventListener("click",function(e){
 // })
 
 function inputFromTextArea(e){
- console.log("clicked");
- console.log(inputText.value);
+//  console.log("clicked");
+//  console.log(inputText.value);
+translatedArea.innerText="🍌banana banana🍌 banana🍌 banana🍌 "+inputText.value+" banana🍌 banana🍌 banana🍌 banana🍌 "
 }
