@@ -1,22 +1,45 @@
-
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
 .btn-translate{
 
-    position: absolute;
-    
-    top: 50vh;
-    
-    left: 21vw;
-    }
+position: absolute;
+
+top: 58vh;
+
+left: 21vw;
+
+background-color: #FDE68A;
+
+padding: 4px;
+
+border: none;
+}
     
     #input-text{
         
-    display: block;
+display: block;
         
-    height: 14rem;
+height: 14rem;
         
-    width: 60%;
+width: 60%;
         
-    margin: auto;
+margin: auto;
+        
+background-color: #FDE68A;
+        
+border: none;
+        
+outline: none;
+        
+overflow: auto;
+        
+font-size: 2rem;
+        
+padding: 1rem;
     }
     .translated-area{
 
@@ -24,12 +47,37 @@ height: 30%;
 
 width: 80%;
 
-border: 1px solid;
+border: none;
 
 position: absolute;
 
-top: 60vh;
+top: 63vh;
 
 left: 10vw;
 
+background-color: #FDE68A;
+
+font-size: 2rem;
+
+padding: 1rem;
+}
+h1{
+
+background-color: #FBBF24;
+
+height: 5rem;
+
+text-align: center;
+
+padding: 1rem;
+}
+.description{
+
+padding: 1rem;
+
+text-align: center;
+
+color: #FBBF24;
+
+font-size: xx-large;
 }
