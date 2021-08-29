@@ -7,7 +7,10 @@ var translatedArea = document.querySelector(".translated-area");
 
 button.addEventListener("click", function (e) {
    // console.log("button clicked");
-   inputFromTextArea(e);
+   if(inputText.value!=""){
+     
+      inputFromTextArea(e);
+   }
 })
 function serverURL(text) {
    // var URL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json" + "?" + "text=" + text;
